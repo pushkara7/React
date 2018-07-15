@@ -24,16 +24,15 @@ class App extends Component {
   }
   render() {
     const inputStyle = {
-          fontSize: '10px',
-          width:'10%'
+          fontSize: '18px',
+          color: 'green'
       }
     return (
       <div className="App">
         <header>          
-          <h1 className="App-title">Assignment One</h1>
+          <h1 style={inputStyle}>Assignment One</h1>
         </header>
         <UserInput 
-        style={inputStyle}
         changed={this.changeUserNameHandler} 
         startName ={this.state.usernames[0].username} />
         <UserOutput 
